@@ -23,7 +23,8 @@ public class ToDoList extends ActionBarActivity {
 
         final ArrayList<String> todoItems = new ArrayList<String>();
         final ArrayAdapter<String> aa;
-        aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, todoItems);
+        int resID = R.layout.todolist_item;
+        aa = new ArrayAdapter<String>(this, resID, todoItems);
         myListView.setAdapter(aa);
 
         myEditText.setOnKeyListener(new View.OnKeyListener() {

@@ -4,5 +4,10 @@
     <string name="app_name">android-todo</string>
     <string name="myEditText">New To Do Item!</string>
     <string name="action_settings">Settings</string>
+    <string name="add_new">Add New Item</string>
+    <string name="remove">Remove Item</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_todo_list_item_view">TodoListItemView</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
