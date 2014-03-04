@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">android-todo</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="myEditText">New To Do Item!</string>
     <string name="action_settings">Settings</string>
 
 </resources>
