@@ -23,6 +23,7 @@ public class ToDoList extends ActionBarActivity {
 
         final ArrayList<String> todoItems = new ArrayList<String>();
         final ArrayAdapter<String> aa;
+        //We add our item with our created layout "todolist_item"
         int resID = R.layout.todolist_item;
         aa = new ArrayAdapter<String>(this, resID, todoItems);
         myListView.setAdapter(aa);
