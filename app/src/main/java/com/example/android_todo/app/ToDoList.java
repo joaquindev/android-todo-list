@@ -12,7 +12,18 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+
+//Adding extra stuff and buttons
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.ContextMenu;
+import android.widget.AdapterView;
+
+
 public class ToDoList extends ActionBarActivity {
+
+    static final private int ADD_NEW_TODO = Menu.FIRST;
+    static final private int REMOVE_TODO = Menu.FIRST + 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +58,18 @@ public class ToDoList extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.to_do_list, menu);
+        super.onCreateOptionsMenu(menu);
+        MenuItem itemAdd = menu.add(0, ADD_NEW_TODO, Menu.NONE, R.string.add_new);
+        MenuItem itemRem = menu.add(0, REMOVE_TODO, Menu.NONE, R.string.remove);
+
+        //Assign icons
+        itemAdd.setIcon(R.drawable.add);
+        itemRem.setIcon(R.drawable.delete);
+
+        //Allocate shortcuts to each of them
+        itemAdd.setShortcut('0', 'a');
+        itemRem.setShortcut('1', 'r');
+
         return true;
     }
 

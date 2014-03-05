@@ -18,6 +18,7 @@ public class TodoListItemView extends TextView {
     private int paperColor;
     private float margin;
 
+
     public TodoListItemView(Context context) {
         super(context);
         init();
